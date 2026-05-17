@@ -1,0 +1,2 @@
+-- Database is optional for the current automated threat modeling platform.
+-- Keep this folder for future persistence of projects, analyses, and generated reports.
