@@ -998,15 +998,14 @@ input {
   }
 
   .panel-heading h2 {
-    font-size: 1.45rem;
+    font-size: 1.35rem;
   }
 }
 
-/* ============================================================================
- * ENTRY PAGE STYLES - Dark Green Cyber Mesh / Neural Network Background
- * Isolated styling for pre-authentication landing page (EntryPage component)
- * Does NOT affect main dashboard, workspace, or core application UI
- * ============================================================================ */
+/* ============================================
+   ENTRY PAGE: Dark Green Cyber Mesh Design
+   Isolated landing page background styling
+   ============================================ */
 
 .entry-fullscreen-container {
   position: fixed;
@@ -1073,4 +1072,12 @@ input {
 @keyframes entrancePulse {
   0%, 100% { opacity: 0.3; transform: scale(0.85); }
   50% { opacity: 1; transform: scale(1.25); }
+}
+
+/* Ensure entry nav and content sit above background layers */
+.entry-nav,
+.entry-content,
+.entry-cards-premium {
+  position: relative;
+  z-index: 10;
 }
